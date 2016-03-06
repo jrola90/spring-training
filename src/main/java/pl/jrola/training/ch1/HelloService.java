@@ -1,8 +1,5 @@
-package pl.jrola.training;
+package pl.jrola.training.ch1;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class HelloService {
     public String sayHello() {
         return "Hello world!";
