@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Created by JrQ- on 2016-03-10.
+ * Creating beans with different scopes.
  */
 public class Main {
 

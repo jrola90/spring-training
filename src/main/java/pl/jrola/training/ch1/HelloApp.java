@@ -3,6 +3,9 @@ package pl.jrola.training.ch1;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * Getting beans from context.
+ */
 public class HelloApp {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-config-ch1.xml");

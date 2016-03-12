@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Created by JrQ- on 2016-03-09.
+ * Constructing beans with factory method.
  */
 public class Main {
 
