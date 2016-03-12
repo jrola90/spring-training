@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+<bean id="subBean2" class="pl.jrola.training.ch7.SubBean"/>
+    <bean id="subBean3" class="pl.jrola.training.ch7.SubBean"/>
+
+    <util:map id="map">
+        <entry key="1" value="val1" />
+    </util:map>
+
+    <bean id="bean" class="pl.jrola.training.ch7.Bean">
+        <property name="list">
+            <list>
+                <bean id="subBean1" class="pl.jrola.training.ch7.SubBean"/>
+                <ref bean="subBean2"/>
+                <ref bean="subBean3"/>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>1</value>
+                <value>2</value>
+            </set>
+        </property>
+        <property name="map" ref="map"/>
+    </bean>
+
+</beans>
