@@ -4,20 +4,20 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="beanB1" class="pl.jrola.training.ch2.BeanB">
+    <beanA id="beanB1" class="pl.jrola.training.ch2.BeanB">
         <constructor-arg value="instance 1" />
-    </bean>
+    </beanA>
 
-    <bean id="beanB2" class="pl.jrola.training.ch2.BeanB">
+    <beanA id="beanB2" class="pl.jrola.training.ch2.BeanB">
         <constructor-arg value="instance 2" />
-    </bean>
+    </beanA>
 
-    <bean id="beanA1" class="pl.jrola.training.ch2.BeanA">
+    <beanA id="beanA1" class="pl.jrola.training.ch2.BeanA">
         <constructor-arg ref="beanB1"/>
-    </bean>
+    </beanA>
 
-    <bean id="beanA2" class="pl.jrola.training.ch2.BeanA">
+    <beanA id="beanA2" class="pl.jrola.training.ch2.BeanA">
         <property name="beanB" ref="beanB2"/>
-    </bean>
+    </beanA>
 
 </beans>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+    <bean id="subBeanC" class="pl.jrola.training.ch8.SubBeanC" />
+    <bean id="beanA" class="pl.jrola.training.ch8.BeanA" autowire="byType"/>
+
+    <bean id="subBeanXCY" class="pl.jrola.training.ch8.SubBeanA" />
+    <bean id="subBean1" class="pl.jrola.training.ch8.SubBeanA" />
+    <bean id="sub" class="pl.jrola.training.ch8.SubBeanB" />
+    <bean id="beanB" class="pl.jrola.training.ch8.BeanB" autowire="byName" />
+
+    <bean id="beanC" class="pl.jrola.training.ch8.BeanC" autowire="constructor" />
+
+    <bean id="beanD" class="pl.jrola.training.ch8.BeanD" autowire="default" />
+
+</beans>
