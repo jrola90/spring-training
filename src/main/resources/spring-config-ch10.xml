@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+    <context:annotation-config/>
+
+    <bean id="beanA" class="pl.jrola.training.ch10.BeanA"/>
+
+    <bean id="subBeanA1" class="pl.jrola.training.ch10.SubBeanA" />
+    <bean id="subBeanA2" class="pl.jrola.training.ch10.SubBeanA" />
+    <bean id="subBeanA3" class="pl.jrola.training.ch10.SubBeanA" />
+
+</beans>
