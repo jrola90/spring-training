@@ -1,7 +1,6 @@
 package pl.jrola.training.ch10;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import pl.jrola.training.ch7.SubBean;
 
 import java.util.Arrays;
 import java.util.List;
