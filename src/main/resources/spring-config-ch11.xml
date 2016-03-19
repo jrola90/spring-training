@@ -7,16 +7,16 @@
 
     <context:annotation-config/>
 
-    <bean id="bean" class="pl.jrola.training.ch11.Bean"/>
+    <bean id="bean" class="pl.jrola.training.p2.ch11.Bean"/>
 
-    <bean id="beanA1" class="pl.jrola.training.ch11.BeanA">
+    <bean id="beanA1" class="pl.jrola.training.p2.ch11.BeanA">
         <qualifier value="beanA1qualifier"/>
     </bean>
 
-    <bean id="beanA2" class="pl.jrola.training.ch11.BeanA"/>
+    <bean id="beanA2" class="pl.jrola.training.p2.ch11.BeanA"/>
 
-    <bean id="beanA3" class="pl.jrola.training.ch11.BeanA">
-        <qualifier type="pl.jrola.training.ch11.MyBean" />
+    <bean id="beanA3" class="pl.jrola.training.p2.ch11.BeanA">
+        <qualifier type="pl.jrola.training.p2.ch11.MyBean" />
     </bean>
 
 </beans>

@@ -7,10 +7,10 @@
 
     <context:annotation-config/>
 
-    <bean id="beanA" class="pl.jrola.training.ch10.BeanA"/>
+    <bean id="beanA" class="pl.jrola.training.p1.ch10.BeanA"/>
 
-    <bean id="subBeanA1" class="pl.jrola.training.ch10.SubBeanA" />
-    <bean id="subBeanA2" class="pl.jrola.training.ch10.SubBeanA" />
-    <bean id="subBeanA3" class="pl.jrola.training.ch10.SubBeanA" />
+    <bean id="subBeanA1" class="pl.jrola.training.p1.ch10.SubBeanA" />
+    <bean id="subBeanA2" class="pl.jrola.training.p1.ch10.SubBeanA" />
+    <bean id="subBeanA3" class="pl.jrola.training.p1.ch10.SubBeanA" />
 
 </beans>

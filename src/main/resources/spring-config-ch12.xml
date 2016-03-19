@@ -7,7 +7,7 @@
 
     <context:annotation-config/>
 
-    <bean id="bean" class="pl.jrola.training.ch12.Bean" />
-    <bean id="beanAA" class="pl.jrola.training.ch12.BeanA" />
+    <bean id="bean" class="pl.jrola.training.p2.ch12.Bean" />
+    <bean id="beanAA" class="pl.jrola.training.p2.ch12.BeanA" />
 
 </beans>

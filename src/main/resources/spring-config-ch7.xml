@@ -5,17 +5,17 @@
        xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 
-<beanA id="subBean2" class="pl.jrola.training.ch7.SubBean"/>
-    <beanA id="subBean3" class="pl.jrola.training.ch7.SubBean"/>
+<beanA id="subBean2" class="pl.jrola.training.p1.ch7.SubBean"/>
+    <beanA id="subBean3" class="pl.jrola.training.p1.ch7.SubBean"/>
 
     <util:map id="map">
         <entry key="1" value="val1" />
     </util:map>
 
-    <beanA id="beanA" class="pl.jrola.training.ch7.Bean">
+    <beanA id="beanA" class="pl.jrola.training.p1.ch7.Bean">
         <property name="list">
             <list>
-                <beanA id="subBean1" class="pl.jrola.training.ch7.SubBean"/>
+                <beanA id="subBean1" class="pl.jrola.training.p1.ch7.SubBean"/>
                 <ref beanA="subBean2"/>
                 <ref beanA="subBean3"/>
             </list>

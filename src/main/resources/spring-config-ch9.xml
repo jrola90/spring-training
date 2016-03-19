@@ -7,8 +7,8 @@
 
        <context:annotation-config />
 
-       <bean id="beanA" class="pl.jrola.training.ch9.BeanA" />
-       <bean id="subBeanA" class="pl.jrola.training.ch9.SubBeanA" />
-       <bean id="subBeanB" class="pl.jrola.training.ch9.SubBeanB" />
+       <bean id="beanA" class="pl.jrola.training.p1.ch9.BeanA" />
+       <bean id="subBeanA" class="pl.jrola.training.p1.ch9.SubBeanA" />
+       <bean id="subBeanB" class="pl.jrola.training.p1.ch9.SubBeanB" />
 
 </beans>
