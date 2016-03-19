@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 /**
  * Created by JrQ- on 2016-03-17.
- * Qualifiers. Writing custom qualifier.
  */
 public class Bean {
 
