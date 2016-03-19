@@ -20,11 +20,11 @@ public class ResourceBean {
     private Resource urlResource;
 
     @Autowired
-    @Value(value = "file:C:\\Users\\JrQ-\\Desktop\\dev\\source\\training\\spring-training\\src\\main\\resources\\ch17.txt")
+    @Value(value = "file:C:\\Users\\JrQ-\\Desktop\\dev\\source\\training\\spring-training\\src\\main\\resources\\text_files\\ch17.txt")
     private Resource fileResource;
 
     @Autowired
-    @Value(value = "classpath:ch17.txt")
+    @Value(value = "classpath:text_files\\ch17.txt")
     private Resource classPathResource;
 
     public void printResourcesContent() throws IOException {
