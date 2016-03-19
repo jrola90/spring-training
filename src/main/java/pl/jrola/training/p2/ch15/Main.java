@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 /**
  * Created by JrQ- on 2016-03-19.
- * Spring configuration in Java.
+ * Spring configuration in Java (creating beans).
  */
 public class Main {
 
@@ -18,5 +18,8 @@ public class Main {
 
         Bean beanWithName = context.getBean("beanWithName", Bean.class);
         System.out.println(beanWithName);
+
+        Bean beanWithDependencies = context.getBean("beanWithDependencies", Bean.class);
+        System.out.println(beanWithDependencies);
     }
 }

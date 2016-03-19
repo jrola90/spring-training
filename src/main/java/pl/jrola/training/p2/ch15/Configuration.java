@@ -16,4 +16,17 @@ public class Configuration {
         return new Bean();
     }
 
+    @org.springframework.context.annotation.Bean
+    public Bean beanWithDependencies() {
+        Bean bean = new Bean(beanA());
+        return bean;
+    }
+
+    @org.springframework.context.annotation.Bean
+    public BeanA beanA() {
+        BeanA beanA = new BeanA();
+        beanA.setProp("Property example");
+        return beanA;
+    }
+
 }
